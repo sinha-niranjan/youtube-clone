@@ -38,7 +38,7 @@ const Header = () => {
   };
 
   return (
-    <div className="sticky top-0 z-10 flex flex-row items-center justify-between h-14 px-4 md:px-5 bg-black dark:bg-black">
+    <div className="sticky top-0 z-50 flex flex-row items-center justify-between h-14 px-4 md:px-5 bg-black dark:bg-black">
       {loading && <Loader />}
 
       <div className="flex h-5 items-center">
@@ -60,7 +60,7 @@ const Header = () => {
             src={ytLogo}
             alt="Youtube"
           />
-          <img className="h-full md:hidden" src={ytLogoMobile} alt="Youtube" />
+          {/* <img className="h-full md:hidden" src={ytLogoMobile} alt="Youtube" /> */}
         </Link>
       </div>
       <div className="group flex items-center">
