@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 import { BsFillCheckCircleFill } from "react-icons/bs";
 
 import VideoLength from "../shared/VideoLength";
+import Live from "../shared/Live";
 
-
-const VideoCard = ({video}) => {
+const VideoCard = ({ video }) => {
   return (
     <Link to={`/video/${video?.videoId}`}>
       <div className="flex flex-col mb-8">
@@ -17,6 +17,7 @@ const VideoCard = ({video}) => {
             alt="logo"
           />
           {video?.lengthSeconds && <VideoLength time={video?.lengthSeconds} />}
+          {video?.isLiveNow && <Live />}
         </div>
         <div className="flex text-white mt-3">
           <div className="flex items-start">
@@ -49,7 +50,7 @@ const VideoCard = ({video}) => {
         </div>
       </div>
     </Link>
-  )
-}
+  );
+};
 
-export default VideoCard
+export default VideoCard;
