@@ -56,11 +56,11 @@ const Header = () => {
         )}
         <Link to="/" className="flex h-5 items-center">
           <img
-            className="h-full  my-logo dark:md:block"
+            className="h-full  my-logo dark:md:block hidden"
             src={ytLogo}
             alt="Youtube"
           />
-          {/* <img className="h-full md:hidden" src={ytLogoMobile} alt="Youtube" /> */}
+          <img className="h-full md:hidden" src={ytLogoMobile} alt="Youtube" />
         </Link>
       </div>
       <div className="group flex items-center">
